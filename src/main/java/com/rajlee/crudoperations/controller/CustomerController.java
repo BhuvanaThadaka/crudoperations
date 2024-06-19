@@ -36,11 +36,6 @@ public class CustomerController {
         return customerService.getCustomers();
     }
 
-//    @GetMapping("/customer/{name}")
-//    public List<Customer> findByName(@PathVariable("name") String name) {
-//        return customerService.getCustomerByName(name);
-//    }
-
     @DeleteMapping("/delete/{id}")
     public String deleteProduct(@PathVariable int id) {
         return customerService.deleteCustomer(id);
